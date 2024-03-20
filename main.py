@@ -1,7 +1,7 @@
 # el main llamara a las librerias y llamara a los archivos en los que figuran las funciones aplicadas por ejemplo, en ETL
 
 # Importación de librerias y archivos necesarios:
-from fastapi import FastApi
+from fastapi import FastAPI
 import pandas as pd
 import numpy as np
 
@@ -12,7 +12,7 @@ df_user_recommend = pd.read_csv(r'Datasets para API\df_user_recommend.csv')
 # pd.read_parquet......
 
 # Instanciamos la clase de nuestr API:
-app = FastApi()
+app = FastAPI()
 
 # Endpoints de nuestra API:
     ## Inicio de la página
